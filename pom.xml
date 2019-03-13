@@ -5,6 +5,7 @@
 	<artifactId>SpringDataRestBoot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
+		
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>com.conygre.spring.boot.AppConfig</start-class>
