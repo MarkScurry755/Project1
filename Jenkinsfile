@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh '''aws cloudformation create-stack --template-body  file://example.template --stack-name Mstack --capabilities adminrole --region eu-west-1
+                sh '''aws cloudformation create-stack --template-body  file://example.template --stack-name Mstack --capabilities CAPABILITY_IAM --region eu-west-1
                 aws cloudformation wait stack-create-complete --stack-name Mstack --region eu-west-1 
                 aws cloudformation describe-stack-events --stack-name Mstack --region eu-west-1'''
             }
